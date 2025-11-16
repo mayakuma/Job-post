@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New Opening — Office Work (Ahmedabad)</title>
+  <style>
+    :root{ --accent:#0b5cff; --bg:#f6f7fb; --card:#fff; --muted:#6b7280; --glass: rgba(255,255,255,0.65); }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg,var(--bg) 0%, #eef2ff 100%); color:#0f172a}
+    .wrap{max-width:900px;margin:32px auto;padding:20px}
+
+    .banner{display:flex;align-items:center;justify-content:space-between;background:linear-gradient(90deg,#111827, #0b1220);color:#fff;padding:22px;border-radius:14px;box-shadow:0 10px 30px rgba(2,6,23,0.25); position:relative; overflow:hidden}
+    .banner h1{margin:0;font-size:28px;letter-spacing:2px}
+    .banner p{margin:0;font-weight:600; opacity:.95}
+    .ribbon{position:absolute;right:-60px;top:-40px;transform:rotate(20deg);background:var(--accent);padding:14px 110px;color:#fff;font-weight:700;box-shadow:0 6px 20px rgba(11,92,255,0.18)}
+
+    .card{background:var(--card);border-radius:12px;padding:20px;margin-top:18px;box-shadow:0 8px 30px rgba(2,6,23,0.06);display:grid;grid-template-columns:1fr 320px;gap:18px}
+
+    .left{padding:6px 10px}
+    .job-title{font-size:22px;font-weight:800;margin:6px 0}
+    .meta{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-weight:600}
+
+    .specs{margin-top:12px;display:flex;flex-direction:column;gap:8px}
+    .spec{display:flex;justify-content:space-between;align-items:center;padding:10px;border-radius:8px;background:linear-gradient(180deg, #ffffff, #fbfdff);border:1px solid rgba(15,23,42,0.04)}
+    .spec strong{font-size:16px}
+    .spec small{color:var(--muted)}
+
+    .cta-row{display:flex;gap:10px;margin-top:14px}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;border:0;font-weight:700;cursor:pointer;box-shadow:0 8px 20px rgba(11,92,255,0.18)}
+    .btn.secondary{background:transparent;color:var(--accent);border:2px solid rgba(11,92,255,0.12)}
+
+    aside.right{padding:14px;border-radius:10px;background:linear-gradient(180deg, rgba(11,92,255,0.03), rgba(11,92,255,0.01));display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center}
+    .salary{font-weight:900;font-size:22px;color:#07103f}
+    .contact-box{width:100%;padding:12px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfdff);border:1px dashed rgba(7,16,63,0.06);text-align:center}
+    .contact-phone{font-size:20px;font-weight:900;letter-spacing:2px}
+    .share{display:flex;gap:8px;margin-top:8px}
+
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+
+    @media (max-width:820px){.card{grid-template-columns:1fr;}.banner{flex-direction:column;gap:8px}.ribbon{display:none}}
+
+    .animate-up{opacity:0;transform:translateY(10px);animation:up .6s ease forwards}
+    @keyframes up{to{opacity:1;transform:none}}
+
+    .pulse{animation:pulse 1.9s infinite}
+    @keyframes pulse{0%{box-shadow:0 6px 20px rgba(11,92,255,0.12)}50%{box-shadow:0 12px 32px rgba(11,92,255,0.18)}100%{box-shadow:0 6px 20px rgba(11,92,255,0.12)}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="banner animate-up">
+      <div>
+        <h1>NEW OPENING</h1>
+        <p>Office Work — Part time / Full time • Ahmedabad</p>
+      </div>
+      <div style="text-align:right;">
+        <div class="ribbon">HIRING NOW</div>
+        <p style="font-size:13px;opacity:.85;margin-top:8px">Freshers & Experienced — Immediate Joining</p>
+      </div>
+    </div>
+
+    <div class="card animate-up" style="animation-delay:.06s">
+      <div class="left">
+        <div class="job-title">Office Executive / Data Entry / Admin</div>
+        <div class="meta"> 
+          <span><strong>Type:</strong> Part / Full time</span> 
+          <span><strong>Shift:</strong> Day / Flexible</span>
+        </div>
+
+        <div class="specs">
+          <div class="spec"><div><strong>Education</strong><div><small>12th, BA, B.Com, BBA, BSc, Diploma</small></div></div><div><small>Required</small></div></div>
+          <div class="spec"><div><strong>Age</strong><div><small>18 years and above</small></div></div><div><small>Any Gender</small></div></div>
+          <div class="spec"><div><strong>Experience</strong><div><small>Freshers welcome • 0–2 yrs preferred</small></div></div><div><small>Training provided</small></div></div>
+        </div>
+
+        <div class="cta-row">
+          <button class="btn" id="applyBtn">Apply Now</button>
+          <button class="btn secondary" id="saveBtn">Save Job</button>
+          <button class="btn secondary" id="shareBtn">Share</button>
+        </div>
+      </div>
+
+      <aside class="right">
+        <div style="text-align:center">
+          <div style="font-size:12px;color:var(--muted);font-weight:700">Expected Income</div>
+          <div class="salary">₹16,500 — ₹22,500 / month</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:6px">(Incentives & growth opportunities available)</div>
+        </div>
+
+        <div class="contact-box pulse">
+          <div style="font-size:12px;color:var(--muted);font-weight:700">CONTACT</div>
+          <div class="contact-phone" id="contactPhone">9265849542</div>
+          <div style="margin-top:8px;font-size:13px;color:var(--muted)">Send your resume to <strong><span id="contactEmail">jobs@example.com</span></strong></div>
+          <div class="share">
+            <button class="btn secondary" id="whatsBtn">WhatsApp</button>
+            <button class="btn secondary" id="callBtn">Call</button>
+          </div>
+        </div>
+
+        <div style="width:100%;text-align:center;font-size:13px;color:var(--muted)">Walk-ins accepted Mon–Sat • 10:00 — 6:00</div>
+      </aside>
+    </div>
+
+    <footer>
+      <div>Poster generated — Edit contact & job list in the HTML/JS. Replace phone/email as needed.</div>
+    </footer>
+  </div>
+
+  <script>
+    // Apply Button
+    document.getElementById('applyBtn').addEventListener('click', ()=>{
+      const phone = document.getElementById('contactPhone').textContent.trim();
+      const email = document.getElementById('contactEmail').textContent.trim();
+      const message = `Please send your CV to ${email} or WhatsApp ${phone}.\n\nPrefer subject: APPLICATION - Office Executive`;
+      alert(message);
+    });
+
+    // Save Job
+    document.getElementById('saveBtn').addEventListener('click', ()=>{
+      navigator.share 
+        ? navigator.share({title:'Job — Office Executive',text:'Check this job opening',url:location.href}).catch(()=>alert('Sharing not available')) 
+        : alert('Save this page or copy URL');
+    });
+
+    // Share Button
+    document.getElementById('shareBtn').addEventListener('click', ()=>{
+      const txt = `Job Opening: Office Executive — Ahmedabad. Apply: ${location.href}`;
+      if(navigator.share) navigator.share({title:'Job Opening',text:txt,url:location.href}).catch(()=>{});
+      else prompt('Copy and share:', txt);
+    });
+
+    // WhatsApp Button
+    document.getElementById('whatsBtn').addEventListener('click', ()=>{
+      const phone = document.getElementById('contactPhone').textContent.replace(/\D/g,'');
+      const whatsapp = `https://wa.me/${phone}?text=${encodeURIComponent('Hello, I want to apply for the Office Executive position.')}`;
+      window.open(whatsapp,'_blank');
+    });
+
+    // Call Button
+    document.getElementById('callBtn').addEventListener('click', ()=>{
+      const phone = document.getElementById('contactPhone').textContent.replace(/\D/g,'');
+      window.location.href = `tel:${phone}`;
+    });
+  </script>
+</body>
+</html>
